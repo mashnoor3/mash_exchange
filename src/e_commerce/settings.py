@@ -16,10 +16,10 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'mashnoorrashid@gmail.com'
-EMAIL_HOST_PASSWORD = 'HardwareIC3!'
+EMAIL_HOST_USER = 'mashnoor.dev@gmail.com'
+EMAIL_HOST_PASSWORD = 'rashid123'
 EMAIL_PORT = '587' #587 is the port for gmail
-EMAIL_USE_TLS = True 
+EMAIL_USE_TLS = True
 
 
 # Quick-start development settings - unsuitable for production
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'checkout',
     'stripe'
-    
+
 ]
 
 SITE_ID = 1
@@ -146,7 +146,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-if DEBUG: 
+if DEBUG:
     MEDIA_URL = '/media/'
     STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static-only")
     MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
@@ -185,26 +185,10 @@ ACCOUNT_PASSWORD_INPUT_RENDER_VALUE = False
 ACCOUNT_PASSWORD_MIN_LENGTH = 6
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 
-# Stripe stuff 
-# Test keys 
+# Stripe stuff
+# Test keys
 STRIPE_PUBLISHABLE_KEY = 'pk_test_wonpiUhfAsixkWdeCFbt8tEN'
 STRIPE_SECRET_KEY = 'sk_test_Dii5KTYUL5fVYxc0Woh8yLHK'
-# Live keys 
+# Live keys
 # STRIPE_PUBLISHABLE_KEY = ''
 # STRIPE_SECRET_KEY = ''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
