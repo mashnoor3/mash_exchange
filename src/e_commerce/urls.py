@@ -15,7 +15,7 @@ Including another URLconf
 """
 
 from django.conf import settings
-from django.conf.urls.static import static 
+from django.conf.urls.static import static
 
 from django.conf.urls import url, include
 from django.contrib import admin
@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'^about/$', profiles_views.about, name='about'),
     url(r'^profile/$', profiles_views.user_profile, name='profile'),
     url(r'^contact/$', contact_views.contact, name='contact'),
+    url(r'^cart/$', checkout_views.cart, name='cart'),
     url(r'^checkout/$', checkout_views.checkout, name='checkout'),
     url(r'^accounts/', include('allauth.urls')),
 

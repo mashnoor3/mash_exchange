@@ -36,3 +36,9 @@ def checkout(request, **kwargs):
 	context = {'publish_key':publish_key}
 	template = 'checkout.html'
 	return render (request, template, context)
+
+@login_required
+def cart(request, **kwargs):
+	context = {}
+	template = 'cart.html'
+	return render (request, template, context)
